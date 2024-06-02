@@ -1,0 +1,104 @@
+a
+{
+    text-decoration: none;
+    color: white;
+}
+.row1
+{
+    height: 30px;
+}
+.row1 div
+{
+    border:1px solid black;
+}
+.row2 {
+    background-repeat: no-repeat;
+    height: 300px;
+    border: 1px solid green;
+    background-size: 100% 100%;
+
+  }
+#entete
+{
+    background-color: rgb(164, 158, 158);
+    opacity: 0.7;
+    height: 40px;
+    background-size: 100% 100%;
+}
+
+.carousel-item
+{
+    height: 100%;
+    width: 100%;
+}
+  
+.row3 .col-4 
+{
+    height: 100px;
+    margin-top: 7px;
+    margin-bottom: 15px;
+}
+.img2{
+    background-image:url("../../assets/img/image3.jpg");
+    margin-right:7px ;
+    background-size: 100% 100%;
+    
+}
+.img3
+{
+    background-image:url("../../assets/img/image5.jpg");
+    background-size: 100% 100%;
+}
+
+.row4 .col-8 .row .col-2
+{
+    height: 80px;
+    border: 1px solid black;
+}
+
+.img-slide
+{
+    height: 300px;
+    width: 100%;
+}
+
+
+.carousel {
+    position: relative;
+    margin-bottom: 20px;
+   
+  }
+
+  .fixed-menu {
+    position: fixed;
+    top: 30px;
+    left: 0;
+    right: 0; /* Utilisez right: 0 et left: 0 avec margin pour centrer horizontalement */
+    width: 90%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: 1000;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: bold;
+    color: white;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+ 
+  #carouselExampleCaptions
+  {
+      padding: 0px;
+      border: 5px solid green;
+  }
+
+  #ligne
+  {
+    display: flex;
+ 
+  }
+  .row3
+  {
+    margin-top: 10px;
+  }
+

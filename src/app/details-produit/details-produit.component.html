@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="row" *ngFor="let prod of produit">
+        
+        <div class="col-6">
+            <img  src="../../assets/img/{{prod.image}}.jpeg" alt="Image du produit">
+        </div>
+        <div class="col-6">
+            <div class="row ligne" id="ligne1">
+                <div class="col-8">
+                    <span class="align-left">
+                        {{prod.nom}}
+                    </span>
+                </div>
+                <div class="col-4">
+                    <span class="align-right">
+                       {{prod.prix}}
+                    </span>
+                    
+                </div>
+            </div>
+            <hr>
+            <div class="row ligne" id="description">
+                <div class="col-12">
+                    <span>
+                        {{prod.description}}
+                        <span id="idprod">{{prod.idproduit}}</span>
+                    </span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12" >
+                    <button id="btn" (click)="ajouterProduitservice()">AJOUTER</button>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                
+            </div>
+        </div>
+
+    </div>
+    
+    <div class="row">
+        <div class="col-6">
+            <div class="row images">
+                <div class="col-2"><img src="img/nike.jpg" alt="" onclick="afficherImage('img/nike.jpg')"></div>
+                <div class="col-2"><img src="img/nike.jpg" alt="" onclick="afficherImage('img/nike.jpg')"></div>
+                <div class="col-2"><img src="img/nike.jpg" alt="" onclick="afficherImage('img/nike.jpg')"></div>
+                <div class="col-2"><img src="img/nike.jpg" alt="" onclick="afficherImage('img/nike.jpg')"></div>
+                <div class="col-2"><img src="img/nike.jpg" alt="" onclick="afficherImage('img/nike.jpg')"></div>
+                <div class="col-2"><img src="img/nike.jpg" alt="" onclick="afficherImage('img/nike.jpg')"></div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function afficherImage(src) {
+            var imageAffichee = document.getElementById('imageAffichee');
+            imageAffichee.innerHTML = '<img src="' + src + '" alt="Image affichée">';
+        }
+    </script>
+
+</body>
+</html>

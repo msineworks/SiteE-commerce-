@@ -1,0 +1,31 @@
+
+<div class="container">
+    <div class="row row4">
+        <div class="col-2"></div>
+        <div class="col-8">
+            <div class="row produit">
+                <div class="col-3" *ngFor="let produit of listProduit">
+                    <div class="" id="un-produit">
+                      <div class="row"><div class="col-12" id="nom-produit">{{produit.nom}}</div></div>
+                      <div class="row"><div class="col-12" id="prix-produit">{{produit.prix}}</div></div>
+                      <div class="row" id="image-produit">
+                        <div class="col-12">
+                          <a [routerLink]="['/details-produit', produit.idproduit]">
+                            <img src="../../assets/img/{{produit.image}}.jpeg" alt="">
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  
+            
+              
+              
+              
+            </div>
+        </div>
+        <div class="col-2"></div>
+    </div>
+
+   
+</div>
